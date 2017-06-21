@@ -1,0 +1,11 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+    <div class="well well-sm"><h1>
+       Your name: <%= @user.name %> , <br> E-mail: <%= @user.email %> <br>
+       <span class="photo"><%= image_tag @user.picture.url , class: "img-responsive img-thumbnail img-circle col-md-5" if @user.picture?  %></span>
+      </h1></div>
+    </section>
+  </aside>
+  </div>

@@ -1,3 +1,40 @@
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+ .photo{
+  width: 150px;
+  height: 150px;
+}
+
+
+ h1 {
+ 	 text-align: center;
+ }
+
+ .checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+// /* forms */
+
+// .usertable {
+//   border: 1px solid #bbb;
+//   width: 100%;
+//   margin-bottom: 15px;
+//   @include box_sizing;
+// }
+
+// input {
+//   height: auto !important;
+// }
