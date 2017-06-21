@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
   def new
   	@user = User.new
+    # @picture = Dir.glob("app/assets/images/database/*.jpg")
   end
   def show
     @user = User.find(params[:id])
@@ -13,7 +14,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "Welcome Battleship"
       redirect_to @user
     else
       render 'new'
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
       flash[:success] = "Updated"
-      redirect_to @use
+      redirect_to @user
     else
       render 'edit'
     end
@@ -39,7 +40,7 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation, 
-                                   :picture)
+                                   :picture,:wins,:losses)
     end
 
     def logged_in_user
@@ -58,4 +59,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       redirect_to(root_url) unless @user == current_user
     end
+    # def userphoto 
+    #   @user = Dir.glob("/app/assets/images/userlogo/*.*")
+    # end
 end

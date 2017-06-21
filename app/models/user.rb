@@ -9,7 +9,8 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
-  mount_uploader :picture, PictureUploader
+  mount_uploader :picture, PictureUploader 
+
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
@@ -34,4 +35,8 @@ class User < ActiveRecord::Base
   def forget
     update_attribute(:remember_digest, nil)
   end
+
+  # def userphoto(piture)
+  #   @user = Dir.glob("/app/assets/images/userlogo/*.*")
+  # end
 end
