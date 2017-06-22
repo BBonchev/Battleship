@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def new
   	@user = User.new
-    # @picture = Dir.glob("app/assets/images/database/*.jpg")
+    #@picture = Dir.glob("app/assets/images/userph/*.svg")
   end
   def show
     @user = User.find(params[:id])
