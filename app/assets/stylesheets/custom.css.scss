@@ -1,15 +1,19 @@
-// @import "bootstrap-sprockets";
-// @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-// /* forms */
 
-// .usertable {
-//   border: 1px solid #bbb;
-//   width: 100%;
-//   margin-bottom: 15px;
-//   @include box_sizing;
-// }
+#page-background {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+            }
 
-// input {
-//   height: auto !important;
-// }
+html, body { 
+    
+    background:none;
+}
+
+
+

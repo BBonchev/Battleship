@@ -1,21 +1,9 @@
 Rails.application.routes.draw do
-
-  root 'welcome#home'
-  get '/signup', to: 'users#new'
-  post '/signup', to: 'users#create'
-  get    '/login', to: 'sessions#new'
-  post   '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  resources :users do
-   member do
-      get :wins, :flosses
-    end
-  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  
+  root 'welcome#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
