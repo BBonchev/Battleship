@@ -1,3 +1,13 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* board */
+
+.table {
+    border-collapse: collapse;
+    width: 300px;
+    height: 250px;
+    margin: 200px 100px 200px 400px;
+    table-layout: fixed;
+}
