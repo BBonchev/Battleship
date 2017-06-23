@@ -31,5 +31,13 @@ $(function() {
 		$('#login-form-link').removeClass('active');
 		$(this).addClass('active');
 		e.preventDefault();
+		$("#login-form").hide();
 	});
 });
+
+// function display(e){
+//     if (e.checked)
+//         document.getElementById('#register-form').style.display = 'block';
+//     else
+//         document.getElementById('#login-form').style.display = 'none';
+//     }
