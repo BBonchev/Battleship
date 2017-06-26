@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       redirect_back_or user
     else
-      flash[:danger] = 'Email/password is invalid' 
+      flash[:notice]  = "Email/password is invalid" 
       redirect_to signup_path
     end
   end
