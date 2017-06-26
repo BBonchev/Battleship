@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_back_or user
     else
       flash[:danger] = 'Email/password is invalid' 
-      render 'new'
+      redirect_to signup_path
     end
   end
 

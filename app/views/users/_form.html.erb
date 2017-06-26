@@ -8,46 +8,45 @@
                 <a href="/signup" class="active" id="login-form-link">Login</a>
               </div>
             <div class="col-xs-6">
-              <a href="/signup" id="register-form-link">Register</a>
+              <a href="/signup" id="register-form-link" >Register</a>
               </div>
              </div>
            </div>
           <div class="panel-body">
         <div class="row">
       <div class="col-lg-12">
-<form accept-charset="UTF-8" action="/login" method="post" >
+<form id="login-form" accept-charset="UTF-8" action="/login" method="post" role="form"  >
+<div class="userloginimg"><h1></h1></div>
   <input name="utf8" type="hidden" value="&#x2713;" />
   <input name="authenticity_token" type="hidden"
          value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
-  <label for="session_email">Email</label>
+  <label for="session_email"></label>
   <input class="form-control" id="session_email"
-         name="session[email]" type="text" /><br>
-  <label for="session_password">Password</label><br>
+         name="session[email]" type="text" placeholder="Email.."/>
+  <label for="session_password"></label>
   <input id="session_password" name="session[password]"
-         type="password" /><br><br>
+         type="password" placeholder="   Password.."/><br><br>
   <input class="form-control btn btn-login" name="commit" type="submit"
-       value="Log in" />
+       value="Log in" />   
 </form>
-
-<br><br>
         <%= render 'shared/error_messages', object: @user %>
-<form id="register-form"  method="post" role="form" style="display: none;"  accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+<form id="register-form"  method="post" role="form" style="display: none;"  accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post" >
   <input name="utf8" type="hidden" value="&#x2713;" />
   <input name="authenticity_token" type="hidden"
          value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
-  <label for="user_name">Nickname</label><br>
-  <input id="user_name" name="user[name]" type="text" />
-<br><br>
-  <label for="user_email">Email</label><br>
-  <input id="user_email" name="user[email]" type="email" />
-<br><br>
-  <label for="user_password">Password</label><br>
+  <label for="user_name"></label><br>
+  <input id="user_name" name="user[name]" type="text" placeholder=" Nickname.."/>
+<br>
+  <label for="user_email"></label><br>
+  <input id="user_email" name="user[email]" type="email" placeholder=" Email.."/>
+<br>
+  <label for="user_password"></label><br>
   <input id="user_password" name="user[password]"
-         type="password" />
-<br><br>
-  <label for="user_password_confirmation">Confirmation</label><br>
+         type="password" placeholder=" Password.." />
+<br>
+  <label for="user_password_confirmation"></label><br>
   <input id="user_password_confirmation"
-         name="user[password_confirmation]" type="password" />
+         name="user[password_confirmation]" type="password" placeholder=" Confirmation.."/>
 <br><br>
   <input class="form-control btn btn-register" name="commit" type="submit"
          value="Create my account" />

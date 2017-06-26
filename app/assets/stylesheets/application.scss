@@ -40,6 +40,10 @@ body {
   background-color: #fff;
   border-color: #fff;
   text-align:center;
+   // color: #00415d;
+  // background-color: black;
+  // border-color: #fff;
+  // text-align:center;
 }
 .panel-login>.panel-heading a{
   text-decoration: none;
@@ -53,6 +57,9 @@ body {
 .panel-login>.panel-heading a.active{
   color: #029f5b;
   font-size: 18px;
+  // background-color: black;
+  // border-color: #fff;
+  // text-align:center;s
 }
 .panel-login>.panel-heading hr{
   margin-top: 10px;
@@ -129,7 +136,12 @@ body {
 
 
 body {
-  background: #F1F3FA;
+  padding-top: 60px;
+  background-image: url("sign.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 /* Profile container */
@@ -263,14 +275,21 @@ input.hidden {
   text-align: left;
   color: black;
 }
+.sing h1{
+  color: white;
+}
+.userloginimg h1{
+  width: 225px;
+  height: 225px;
+  margin: auto;
+  border-radius: 0%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: image-url('images.png')
+}
 
-// .userloginimg h1{
-//   width: 240px;
-//   height: 240px;
-//   margin: auto;
-//   border-radius: 0%;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   background: image-url('img.png')
-// }
+.tab_frm{float:left; width:100%;}
+.tab_frm li{float:left; width:50%; text-align:center; list-style:none; border:1px solid #333;}
+.tab_frm li a{width:100%; background:#fff !important;color:#333 !important; float:left; height:40px; padding:8px 0 0 0;}
+.tab_frm li a.active{color:#fff !important; background:#333 !important;}
