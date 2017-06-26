@@ -15,3 +15,32 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+  $(".toggle").click(function(){
+  $(this).toggleClass("active");
+  });
+
+  $(".slide-body").click(function(){
+  $(".slide-body .slide").toggleClass("active");
+  });
+
+  $(".on").click(function(){
+    $("#audio-player")[0].play();
+  });
+
+  $(".off").click(function(){
+    $("#audio-player")[0].pause();
+  });
+});
+
+
+$(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
