@@ -1,9 +1,9 @@
 <table class="table table-striped table-bordered">
-    <% for row in 0...10 %>
+    <% for row in 0..9 %>
         <tr>
-            <% for col in 0...10 %>
+            <% for column in 0..9 %>
                 <td>
-                    <%= @grid[row][col] %>
+                    <%= @grid[row][column]['action'] %>
                 </td>
             <% end %>
         </tr>
