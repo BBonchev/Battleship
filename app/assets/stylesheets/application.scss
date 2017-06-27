@@ -335,3 +335,13 @@ input.hidden {
     box-shadow:0 1px 0 !important;
 }
 
+
+
+.table {
+    border-collapse: collapse;
+    width: 300px;
+    height: 250px;
+    margin: 200px 100px 200px 400px;
+    table-layout: fixed;
+}
+

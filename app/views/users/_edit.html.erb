@@ -67,7 +67,7 @@
         <br>       
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
-      <div  align="center"> <div class="userphoto"><h1></h1></div><br>
+      <div  align="center"> <div class="userphoto"><h1></h1></div>
       <div class="textform"> <%= f.label :Nickname %> </div>
       <%= f.text_field :name, class: 'form-control' %><br>
 
@@ -78,7 +78,7 @@
       <%= f.password_field :password, class: 'form-control',placeholder: "Waiting for new password.."  %><br>
 
       <div class="textform"><%= f.label :password_confirmation, "Confirmation" %> </div>
-      <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "Waiting for password confirmation.."  %><br><br>
+      <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "Waiting for password confirmation.."  %><br>
         
       <%= f.submit "save changes", class: "form-control btn btn-register" %>
     <% end %>
