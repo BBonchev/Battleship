@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
+
 $(function() {
 
     $('#login-form-link').click(function(e) {
@@ -35,9 +36,5 @@ $(function() {
 	});
 });
 
-// function display(e){
-//     if (e.checked)
-//         document.getElementById('#register-form').style.display = 'block';
-//     else
-//         document.getElementById('#login-form').style.display = 'none';
-//     }
+
+

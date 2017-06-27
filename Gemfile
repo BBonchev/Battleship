@@ -1,9 +1,16 @@
 source 'https://rubygems.org'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'tzinfo-data'
+
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.5'
+# Use sqlite3 as the database for Active Record
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
@@ -16,6 +23,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'carrierwave','1.1.0'
 gem 'mini_magick','4.7.0'
 gem 'fog','1.40.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -24,9 +32,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
 gem 'device'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'

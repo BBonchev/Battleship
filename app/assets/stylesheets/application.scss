@@ -25,10 +25,10 @@
 }
  /* form */
 
-body {
-    padding-top: 60px;
-    margin: center;
-}
+// body {
+//     padding-top: 60px;
+//     margin: center;
+// }
 .panel-login {
   border-color: #ccc;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
@@ -135,7 +135,7 @@ body {
 }
 
 
-body {
+.body {
   padding-top: 60px;
   background-image: url("sign.jpg");
   background-repeat: no-repeat;
@@ -334,3 +334,4 @@ input.hidden {
     border-width: 5px !important;
     box-shadow:0 1px 0 !important;
 }
+
