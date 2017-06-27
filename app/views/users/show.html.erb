@@ -4,7 +4,9 @@
 <div class="row">
 <div class="col-md-7"> 
 <div class="panel panel-default">
-  <div class="panel-heading">  <h4 ><%= link_to "Edit profil", edit_user_path(current_user) %></h4></div>
+  <div class="panel-heading"> 
+  <h4><%= link_to "Edit profil", edit_user_path(current_user) %></h4>
+   <h4><%= link_to "Log out", logout_path, method: :delete %></h4></div>
    <div class="panel-body">
    <div class="box box-info">
    <div class="box-body">
@@ -38,7 +40,9 @@
         </div>   
      </div> 
    </div>
-</div>  </div>
+</div>  
+</div>
+</div>
 <!--     <script>
               $(function() {
     $('#profile-image1').on('click', function() {
@@ -46,8 +50,7 @@
     });
 });       
     </script> --> 
-   </div>
-</div>
+
 
 
 

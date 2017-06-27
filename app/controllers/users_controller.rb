@@ -62,4 +62,9 @@ class UsersController < ApplicationController
     # def userphoto 
     #   @user = Dir.glob("/app/assets/images/userlogo/*.*")
     # end
+
+    def destroy
+    log_out if logged_in?
+    redirect_to root_url
+  end
 end
