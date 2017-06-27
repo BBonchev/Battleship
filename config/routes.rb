@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
   root 'welcome#home'
   get '/signup', to: 'users#new'
@@ -11,11 +12,13 @@ Rails.application.routes.draw do
       get :wins, :flosses
     end
   end
+=======
+>>>>>>> 15a881f8cf719cd9ff12e683ac8c362fb31f5da9
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  
+  root 'welcome#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
