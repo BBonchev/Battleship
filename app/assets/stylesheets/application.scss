@@ -25,10 +25,10 @@
 }
  /* form */
 
-// body {
-//     padding-top: 60px;
-//     margin: center;
-// }
+ body {
+     padding-top: 60px;
+     margin: center;
+ }
 .panel-login {
   border-color: #ccc;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
@@ -142,6 +142,7 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: 100%;
+  padding-bottom: 100%;
 }
 
 /* Profile container */
@@ -344,4 +345,4 @@ input.hidden {
     margin: 200px 100px 200px 400px;
     table-layout: fixed;
 }
-
+.container { width: auto; }
