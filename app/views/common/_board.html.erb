@@ -1,11 +1,11 @@
-<table class="table table-striped table-bordered">
-    <% for row in 0..9 %>
-        <tr>
-            <% for column in 0..9 %>
-                <td>
-                    <%= @grid[row][column]['action'] %>
-                </td>
-            <% end %>
-        </tr>
-    <% end %>
-</table>
+<div class="container">
+    <table class="table table-bordered">
+        <% (0..9).each do |row| %>
+            <tr>
+                <% (0..9).each do |column| %>
+                    <td class="field <%= @grid[row][column]['action'] %>"></td>
+                <% end %>
+            </tr>
+        <% end %>
+    </table>
+</div>
