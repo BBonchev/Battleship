@@ -1,0 +1,235 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+ 
+    </div>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        
+<<<<<<< HEAD
+        
+        <% if logged_in? %>
+        <li><%= link_to "New Game", board_path, method: :get %></li>
+        <li><%=link_to current_user.name, current_user %></a></li> 
+        <% else %>
+        <li><%= link_to "New Game", signup_path, method: :get %>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><%= link_to "Sign up / Sing in", signup_path, method: :get %></li> 
+        <% end %>
+          <li><audio id="audio-player" autoplay name="audio-player" src="http://sifidesign.com/audio/explosion.mp3" ></audio>
+=======
+        <li><a href="#">New Game issue</a></li>
+        <li><a href="#about">About</a></li> 
+        <li><a href="#">Sign up</a></li>
+        <li> </li>
+        <li>
+          <audio id="audio-player" autoplay name="audio-player" src="http://sifidesign.com/audio/explosion.mp3" ></audio>
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+          <div class="musicplayer">
+            <div class="musicicon">
+                <p>MUSIC</p>
+            </div>
+            <div class="toggle">
+                <div class="on">ON</div>
+                <div class="off">OFF</div>
+                <div class="slide"></div>
+            </div>
+          </div>
+        </li>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<<<<<<< HEAD
+
+=======
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $(".toggle").click(function(){
+  $(this).toggleClass("active");
+  });
+
+  $(".slide-body").click(function(){
+  $(".slide-body .slide").toggleClass("active");
+  });
+
+  $(".on").click(function(){
+    $("#audio-player")[0].play();
+  });
+
+  $(".off").click(function(){
+    $("#audio-player")[0].pause();
+  });
+});
+
+
+$(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});</script>
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+
+<style type="text/css"> 
+
+}
+.toggle{
+  background: rgba(255, 0, 0, 0.8);
+  width: 77px;
+  height: 22px;
+  position: relative;
+  -webkit-user-select: none;
+  cursor: pointer;
+  border-radius: 0px;
+  font-size: 13px;
+<<<<<<< HEAD
+  
+=======
+  font-family: arial;
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.toggle .on, .toggle .off {
+  z-index: 10;
+  position: absolute;
+<<<<<<< HEAD
+  top: 0px;
+=======
+  top: 0px;o
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+  height: 24px;
+  width:29px;
+  transition: all 0.2s;
+}
+.toggle .off {
+  right: 10px;
+<<<<<<< HEAD
+  color:#80ffe5;
+}
+.toggle .on {
+  left: 5px;
+  color: #999966;
+}
+
+
+.toggle.active .on {
+  color:#80ffe5;
+}
+.toggle.active .off {
+  color:#999966;
+=======
+  color:#999966;
+}t
+.toggle .on {
+  left: 5px;
+  color: #80ffe5;
+}
+.toggle .slide {
+  transition: all 0.2s ease;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  bottom: 0;
+  background: black;
+  width: 28px;
+  height: 23px;
+  z-index: 1;
+  border-radius:5px;
+}
+.toggle:hover .slide {
+  /*background: #999;*/
+}
+.toggle.active .slide {
+  left: 36px;
+}
+.toggle.active .on {
+  color:#999966;
+}
+.toggle.active .off {
+  color:#80ffe5;
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+}
+.musicicon p{
+  text-align: center;
+  font-size:10px;
+  font-family:Arial;
+  line-height:32px;
+  color:#00ffff;
+  font-weight:bold;
+}
+.musicplayer{
+  width: 77px;
+  margin: 20px auto 0 auto;
+}
+
+
+
+section{
+  background:#b3ffff;
+}
+
+.nav.navbar-nav.pull-right li a {
+  color:#adad85;
+}
+.opaque-navbar {
+<<<<<<< HEAD
+    background-color: rgba(0,0,0,0.7);
+=======
+    background-color: rgba(0,0,0,0.5);
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+
+@media (max-width: 992px) {
+  
+  .opaque-navbar {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+<<<<<<< HEAD
+}      
+}
+
+
+
+</style>
+=======
+}
+
+}</style>
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d

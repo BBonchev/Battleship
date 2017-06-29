@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Battleships</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+  		<title>Battleships</title>
 
-<%= yield %>
+  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
 
-</body>
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet" type='text/css'>
+
+		<style type="text/css">
+			body {
+  				font-family: 'Lato', sans-serif;
+  				font-weight: 400; 
+ 			}
+ 		</style>
+
+   			<%= render 'layouts/shim' %>
+    
+       
+	</head>
+
+
+
+	<body id="page-top">
+
+			<%= render 'layouts/header' %>
+
+		<%= yield %>
+
+<<<<<<< HEAD
+			
+	</body>
+	<%= render 'layouts/footer' %>
 </html>
+
+=======
+			<%= render 'layouts/footer' %>
+
+	</body>
+</html>
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
