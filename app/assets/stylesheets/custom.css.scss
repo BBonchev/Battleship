@@ -1,16 +1,29 @@
+<<<<<<< HEAD
 
 // @import "bootstrap-sprockets";
 // @import "bootstrap";
+=======
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-// /* forms */
 
-// .usertable {
-//   border: 1px solid #bbb;
-//   width: 100%;
-//   margin-bottom: 15px;
-//   @include box_sizing;
-// }
+#page-background {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+            }
 
+html, body { 
+    
+    background:none;
+}
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
+
+
+
+<<<<<<< HEAD
 // input {
 //   height: auto !important;
 // }
@@ -35,3 +48,5 @@
 
 
 
+=======
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d

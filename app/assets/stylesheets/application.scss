@@ -1,6 +1,8 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+<<<<<<< HEAD
  .photo{
   width: 150px;
   height: 150px;
@@ -334,6 +336,7 @@ input.hidden {
     border-width: 5px !important;
     box-shadow:0 1px 0 !important;
 }
+<<<<<<< HEAD
 
 
 
@@ -386,3 +389,8 @@ input.hidden {
 .field.special {
     background-color: yellow;
 }
+=======
+=======
+
+>>>>>>> 15a881f8cf719cd9ff12e683ac8c362fb31f5da9
+>>>>>>> 2a66ea581b172604b11a567c0a0974915a44444d
