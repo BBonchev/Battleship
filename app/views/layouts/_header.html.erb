@@ -12,9 +12,9 @@
         
         <li><a href="/" >New Game</a></li>
         <% if logged_in? %>
-        <li><a href="#about">About</a></li>
         <li><%=link_to current_user.name, current_user %></a></li> 
         <% else %>
+        <li><a href="#about">About</a></li>
         <li><%= link_to "Sign up / Sing in", signup_path, method: :get %></li>
         <!-- <li><a href="/signup">Sign up / Sign in</a></li> --><% end %>
           <li><audio id="audio-player" autoplay name="audio-player" src="http://sifidesign.com/audio/explosion.mp3" ></audio>
@@ -49,7 +49,7 @@
   cursor: pointer;
   border-radius: 0px;
   font-size: 13px;
-  font-family: arial;
+  
   line-height: 22px;
   font-weight: bold;
   margin: 0 auto;
@@ -57,26 +57,26 @@
 .toggle .on, .toggle .off {
   z-index: 10;
   position: absolute;
-  top: 0px;o
+  top: 0px;
   height: 24px;
   width:29px;
   transition: all 0.2s;
 }
 .toggle .off {
   right: 10px;
-  color:#999966;
-}t
+  color:#80ffe5;
+}
 .toggle .on {
   left: 5px;
-  color: #80ffe5;
+  color: #999966;
 }
 
 
 .toggle.active .on {
-  color:#999966;
+  color:#80ffe5;
 }
 .toggle.active .off {
-  color:#80ffe5;
+  color:#999966;
 }
 .musicicon p{
   text-align: center;
@@ -101,7 +101,7 @@ section{
   color:#adad85;
 }
 .opaque-navbar {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
     height: 60px;
     border-bottom: 0px;
@@ -125,6 +125,9 @@ ul.dropdown-menu {
     background-color: black;
     height: 60px;
     transition: background-color .5s ease 0s;
+}      
 }
 
-}</style>
+
+
+</style>

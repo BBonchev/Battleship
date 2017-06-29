@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  # get 'ships/new'
+
   root  'welcome#home'
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
     end
   end
  get 'board', to: 'boards#new'
+ get '/ship', to: 'ships#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

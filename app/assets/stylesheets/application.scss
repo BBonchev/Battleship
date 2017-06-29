@@ -26,7 +26,6 @@
  /* form */
 
  body {
-     padding-top: 60px;
      margin: center;
  }
 .panel-login {
@@ -345,4 +344,9 @@ input.hidden {
     margin: 200px 100px 200px 400px;
     table-layout: fixed;
 }
-.container { width: auto; }
+.container { 
+  width: auto; 
+}
+.red {
+ color: red;
+}
