@@ -4,7 +4,7 @@ class ShipsController < ApplicationController
 
 	def create
 	    @ship = Ship.new(ship_params)
-	    @ship = current_user.ship.build(ship_params)
+	    @ship = current_user.ship.build(ship_params) #towa, ako e lognat
 	end
 
 	def ship_params
