@@ -10,13 +10,16 @@
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="nav navbar-nav pull-right">
         
-        <li><a href="/" >New Game</a></li>
+        
         <% if logged_in? %>
+        <li><%= link_to "New Game", board_path, method: :get %></li>
         <li><%=link_to current_user.name, current_user %></a></li> 
         <% else %>
+        <li><%= link_to "New Game", signup_path, method: :get %>
+        <li><a href="/">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><%= link_to "Sign up / Sing in", signup_path, method: :get %></li>
-        <!-- <li><a href="/signup">Sign up / Sign in</a></li> --><% end %>
+        <li><%= link_to "Sign up / Sing in", signup_path, method: :get %></li> 
+        <% end %>
           <li><audio id="audio-player" autoplay name="audio-player" src="http://sifidesign.com/audio/explosion.mp3" ></audio>
           <div class="musicplayer">
             <div class="musicicon">
