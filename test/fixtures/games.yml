@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  boardP1id: 1
+  boardP2id: 1
+
+two:
+  boardP1id: 1
+  boardP2id: 1
