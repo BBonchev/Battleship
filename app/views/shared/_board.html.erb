@@ -1,0 +1,9 @@
+<table class="table table-bordered">
+    <% (0..9).each do |row| %>
+        <tr>
+            <% (0..9).each do |column| %>
+                <td class="field <%= @grid[row][column]['action'] %>"></td>
+            <% end %>
+        </tr>
+    <% end %>
+</table>
