@@ -7,4 +7,9 @@ class Ship < ActiveRecord::Base
 	  self.row = options[:row] ||= nil
       self.col = options[:col] ||= nil
 	end
+	# easy method?
+	# def initialize(row,col) 
+	# 	@row = nil
+	# 	@col = nil
+	# end
 end
