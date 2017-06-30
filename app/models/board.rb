@@ -1,5 +1,5 @@
 class Board < ActiveRecord::Base
-  has_many :ships
-  belongs_to :user 
-  serialize :grid, Array
+  belongs_to :user
+  has_many   :ships
+  serialize  :grid, Array
 end
