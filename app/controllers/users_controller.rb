@@ -4,7 +4,8 @@ class UsersController < ApplicationController
 
   def new
   	@user = User.new
-  end    
+  end
+
   #@picture = Dir.glob("app/assets/images/userph/*.svg")
   def show
     @user = User.find(params[:id])
@@ -59,6 +60,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       redirect_to(root_url) unless @user == current_user
     end
+    
     # def userphoto 
     #   @user = Dir.glob("/app/assets/images/userlogo/*.*")
     # end

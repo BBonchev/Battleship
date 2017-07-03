@@ -3,7 +3,7 @@ class ShipsController < ApplicationController
 	end
 
 	def create #(row: nil, col: nil)
-	     @life = size
+	     # @life = size
 	     @ship = Ship.new(ship_params)
 	    # @ship = current_user.ship.build(ship_params) #towa, ako e lognat
 	end
