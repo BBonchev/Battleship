@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
 
-  root  'welcome#home'
-  get '/signup', to: 'users#new'
-  post '/signup', to: 'users#create'
-  get  '/loginn', to: 'sessions#new'
-  post  '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  get 'board', to: 'boards#new'
-  get 'ship', to: 'ships#new'
-  resources :games, :only => [:index, :create, :show]
+  root                    'welcome#home'
+  get     '/signup', to:  'users#new'
+  get     '/login',  to:  'sessions#new'
+  get     'games',    to: 'games#create'
+  get     'ship',    to:  'ships#new'
+  post    '/signup', to:  'users#create'
+  post    '/login',  to:  'sessions#create'
+  delete  '/logout', to:  'sessions#destroy'
+  resources :games, only: [:create]
   resources :users do
     member do
-    get :wins, :flosses
+    get :wins, :losses
     end
   end
 end

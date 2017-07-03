@@ -13,6 +13,6 @@ class BoardsController < ApplicationController
       end
     end
     @board.save
-    render 'boards/new'
+    redirect_to game_path
   end
 end
