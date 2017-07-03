@@ -13,7 +13,8 @@
         
         <% if logged_in? %>
         <li><%= link_to "New Game", games_path %></li>
-        <li><%=link_to current_user.name, current_user %></a></li> 
+        <!-- <li><%=link_to current_user.name, current_user %></a></li>  -->
+        <li><%=link_to "Profile", current_user %>
         <% else %>
         <li><%= link_to "New Game", signup_path, method: :get %>
         <li><a href="/">Home</a></li>

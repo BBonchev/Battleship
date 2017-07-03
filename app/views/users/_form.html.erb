@@ -41,34 +41,37 @@
     <% if flash[:error] -%>
       <p class="error"><%= flash[:error] %></p>
     <% end -%>
-</form>
-        <%= render 'shared/error_messages', object: @user %>
-<form id="register-form"  method="post" role="form" style="display: none;"  accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post" >
-  <input name="utf8" type="hidden" value="&#x2713;" />
-  <input name="authenticity_token" type="hidden"
-         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
-  <label for="user_name"></label><br>
-  <input id="user_name" name="user[name]" type="text" placeholder=" Nickname.."/>
-<br>
-  <label for="user_email"></label><br>
-  <input id="user_email" name="user[email]" type="email" placeholder=" Email.."/>
-<br>
-  <label for="user_password"></label><br>
-  <input id="user_password" name="user[password]"
-         type="password" placeholder=" Password.." />
-<br>
-  <label for="user_password_confirmation"></label><br>
-  <input id="user_password_confirmation"
-         name="user[password_confirmation]" type="password" placeholder=" Confirmation.."/>
-<br><br>
-  <input class="form-control btn btn-register" name="commit" type="submit"
-         value="Create my account" />
-</form>
-
-              </div>
-            </div>
-          </div>
-      
+      </form>
+              <%= render 'shared/error_messages', object: @user %>
+      <form id="register-form"  method="post" role="form" style="display: none;"  accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post" >
+        <input name="utf8" type="hidden" value="&#x2713;" />
+        <input name="authenticity_token" type="hidden"
+               value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+        <label for="user_name"></label><br>
+        <input id="user_name" name="user[name]" type="text" placeholder=" Nickname.."/>
+      <br>
+        <label for="user_email"></label><br>
+        <input id="user_email" name="user[email]" type="email" placeholder=" Email.."/>
+      <br>
+        <label for="user_password"></label><br>
+        <input id="user_password" name="user[password]"
+               type="password" placeholder=" Password.." />
+      <br>
+        <label for="user_password_confirmation"></label><br>
+        <input id="user_password_confirmation"
+               name="user[password_confirmation]" type="password" placeholder=" Confirmation.."/>
+      <br><br>
+        <input class="form-control btn btn-register" name="commit" type="submit"
+               value="Create my account" />
+      </form>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
  
 
 <script> 
