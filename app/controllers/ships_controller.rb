@@ -4,9 +4,10 @@ class ShipsController < ApplicationController
 		
 	end
 
-	def create
-	    @ship = Ship.new(ship_params)
-	    @ship = current_user.ship.build(ship_params) #towa, ako e lognat
+	def create #(row: nil, col: nil)
+	     @life = size
+	     @ship = Ship.new(ship_params)
+	    # @ship = current_user.ship.build(ship_params) #towa, ako e lognat
 	end
 	
 	private
@@ -14,4 +15,8 @@ class ShipsController < ApplicationController
 	def ship_params
 	     params.require(:ship).permit(:size,:type,:row,:col)
 	end
+
+ # 	  def show
+ #         @ship = Ship.find(params[:id])
+ #    end
 end
