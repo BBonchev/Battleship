@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root                    'welcome#home'
+  root                    'games#create'
   get     '/signup', to:  'users#new'
   get     '/login',  to:  'sessions#new'
   get     'games',   to:  'games#create'

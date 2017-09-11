@@ -337,18 +337,21 @@ input.hidden {
 
 .container { 
   width: auto; 
+  margin-left: 10000px;
+
 }
-.red {
- color: red;
-}
+
 
 /*board*/
 
 .table {
     border: 1px solid black;
     margin: 110px 200px;
-    max-width: 40px;
+    max-width: 20px;
     table-layout: fixed;
+    margin-left: 40em;
+    margin-right: 30em;
+
 }
 
 .field {
@@ -356,28 +359,58 @@ input.hidden {
     height: 50px;
 }
 
-.field.none {
-    background-color: white;
-}
-
-.field.hit {
+.field.five {
     background-color: transparent;
-    background: url('/assets/hit.jpg');
+    background: url('http://www.turvamerkki.fi/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/5/-/5-m.jpg');
     background-size: 100%;
 }
 
-.field.ship {
-    background-color: black;
+.field.one {
+    background-color: transparent;
+    background: url('https://images-na.ssl-images-amazon.com/images/I/21oWQdo9sUL._SX300_.jpg');
+    background-size: 100%;
 }
 
-.field.miss {
+.field.six {
+    background-color: transparent;
+    background: url('https://www.accobrands.co.nz/pa_images/Detail/900411.jpg');
+    background-size: 100%;
+}
+.field.three {
     background-color: transparent;
     background-size: 100%;
-    background-image: url('/assets/miss.jpg');
+    background-image: url('http://www.mizunoshop.net/images/goods/mbzoom240/SH_12N800133_ML.jpg');
+}
+.field.seven {
+    background-color: transparent;
+    background-size: 100%;
+    background-image: url('http://printablenumbers.org/1-40/printable_number_7.jpg');
 }
 
-.field.special {
-    background-color: yellow;
+.field.two {
+    background-color: transparent;
+    background-size: 100%;
+    background-image: url('https://www.accobrands.co.nz/pa_images/Detail/900407.jpg ');
+}
+
+.field.eight {
+     background-color: transparent;
+    background-size: 100%;
+    background-image: url('http://printablenumbers.org/1-30/printable_number_8.jpg');
+}
+
+.field.nine {
+     background-color: transparent;
+    background-size: 100%;
+    background-image: url('https://www.accobrands.co.nz/pa_images/Detail/900414.jpg');
+}
+
+
+
+.field.four {
+     background-color: transparent;
+    background-size: 100%;
+    background-image: url('https://www.accobrands.co.nz/pa_images/Detail/900409.jpg');
 }
 
 #ready {

@@ -1,23 +1,20 @@
 class Board < ActiveRecord::Base
-  belongs_to :user
-  validates  :user_id, presence: true
-  has_many   :ships
+ 
   serialize  :grid, Array
   
   def self.create_board(user)
     @board = Board.new
-    @actions = ['none', 'hit', 'miss', 'ship', 'special']
+    @num =  ['one', 'two', 'nine','eight', 'three', 'four', 'five', 'six', 'seven']
     @grid = Array.new
-    for row in 0..9
+    for row in 0..8
       @grid.push([])
-      for column in 0..9
+      for column in 0..8
         @grid[row].push({
-    		'action' => @actions.sample
-  	   })
+    		'numbers' => @num.sample
+          	   })
       end
     end
     @board.grid = @grid
-    @board.user_id = user.id
     @board.save
     return @board
   end

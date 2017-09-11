@@ -2,13 +2,13 @@ class BoardsController < ApplicationController
   
   def new
     @board = Board.new(params[:user_params])
-    @actions = ['none', 'hit', 'miss', 'ship', 'special']
+    @num =  ['one', 'two', 'nine','eight', 'three', 'four', 'five', 'six', 'seven']
     @grid = Array.new
-    for row in 0..9
+    for row in 0..8
       @grid.push([])
-      for column in 0..9
+      for column in 0..8
         @grid[row].push({
-    		'action' => @actions.sample
+    		'numbers' => @num.sample
   	   })
       end
     end

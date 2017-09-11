@@ -1,9 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
 <table class="table table-bordered">
-    <% (0..9).each do |row| %>
+
+  	<colgroup><col><col><col>
+  	<colgroup><col><col><col>
+  	<colgroup><col><col><col>
+    <% (0..2).each do |row| %>
+
         <tr>
-            <% (0..9).each do |column| %>
-                <td class="field <%= @grid[row][column]['action'] %>"></td>
+            <% (0..8).each do |column| %>
+                <td class="field <%= @grid[row][column]['numbers'] %>"></td>
             <% end %>
         </tr>
+        
+    <% end %>
+    <tbody>
+    <% (3..5).each do |row| %>
+
+        <tr>
+            <% (0..8).each do |column| %>
+                <td class="field <%= @grid[row][column]['numbers'] %>"></td>
+            <% end %>
+        </tr>
+        
+    <% end %>
+    <tbody>
+    <% (6..8).each do |row| %>
+
+        <tr>
+            <% (0..8).each do |column| %>
+                <td class="field <%= @grid[row][column]['numbers'] %>"></td>
+            <% end %>
+        </tr>
+        
     <% end %>
 </table>
+
+</body>
+
+</html>
+<style type="text/css">
+	table { border-collapse: collapse; font-family: Calibri, sans-serif; }
+colgroup, tbody { border: solid medium; }
+td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
+
+
+html { 
+  background: url('http://xdesktopwallpapers.com/wp-content/uploads/2012/01/Three%20Mask%20Girls%20Black%20And%20Red%20Dress%20And%20White%20Background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+    
+</style>
+
+
